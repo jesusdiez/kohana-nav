@@ -48,20 +48,20 @@ As a static helper, you can call Nav from wherever you want. There are some exam
 
 ### Creates a breadcrumb using chainable methods, from a view ###
 
-    <html><body>
-    <?php echo Nav::instance()->add('Home','/')->add('News','/news')->add('New'); ?>
-    </body></html>
+    <html>
+        <body>
+        <?php echo Nav::instance()->add('Home','/')->add('News','/news')->add('New'); ?>
+        </body>
+    </html>
 
 The `render()` method is automagically called using `__toString()`
 The resultant code is:
 
-    <html><body>
     <ul id="nav">
-    <li><a href="/">Home</a></li>
-    <li><a href="/news">News</a></li>
-    <li>New</li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/news">News</a></li>
+        <li>New</li>
     </ul>
-    </body></html>
 
 You can easily stylize it using CSS.
 
@@ -81,9 +81,9 @@ Later, on whathever action method of any app controller, I add specific navigati
 And finally, the data has to be rendered somewhere. I added it to my template
 
     <html>
-    <body>
-        <div id="header"><?php echo $nav->render(); ?></div>
-    </body>
+        <body>
+            <div id="header"><?php echo $nav->render(); ?></div>
+        </body>
     </html>
 
 
@@ -95,6 +95,6 @@ And finally, the data has to be rendered somewhere. I added it to my template
 
 **Author** Jesús Díez
 
-* web (http://jesusdiez.com "Jesus Díez") 
-* email (mailto:jesus@jesusdiez.com "jesus@jesusdiez.com")
-* twitter (http://twitter.com/jesusdiezc "@jesusdiezc")
+* web [http://jesusdiez.com](http://jesusdiez.com "Jesus Díez") 
+* email [jesus@jesusdiez.com](mailto:jesus@jesusdiez.com "jesus@jesusdiez.com")
+* twitter [@jesusdiezc](http://twitter.com/jesusdiezc "@jesusdiezc")
