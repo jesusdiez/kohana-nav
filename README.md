@@ -97,4 +97,4 @@ And finally, the data has to be rendered somewhere. I added it to my template
 
 * web (http://jesusdiez.com "Jesus Díez") 
 * email (mailto:jesus@jesusdiez.com "jesus@jesusdiez.com")
-* twitter (http://twitter.com/jesusdiezc "@jesusdiezc") 
+* twitter (http://twitter.com/jesusdiezc "@jesusdiezc")
