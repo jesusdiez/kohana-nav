@@ -25,6 +25,8 @@ Navdata, an array of navitems
     );
 
 ## Usage ##
+
+As a static helper, you can call Nav from wherever you want. There are some examples calling Nav in different ways, that may help you.
     
 ### Creates a breadcrumb ###
 
@@ -63,10 +65,10 @@ The resultant code is:
 
 You can easily stylize it using CSS.
 
-## How do I use it? ##
+### The way I use it ###
 
-I added a `private $nav;` atribute to the `Controller_Template`, from wich my controllers extend. 
-I also initialized `$nav` on the constructor, with an initial value.
+I use the `Controller_Template` to manage the views of my App, and then I added a `private $nav;` atribute to my `Controller_Base` wich extends the `Controller_Template` and from wich the rest of my controllers extend.
+I initialize `$nav` on the it's constructor, with an initial *Home* value.
 
     $this->nav = Nav::instance()->add('Home', URL::site());
     
@@ -88,8 +90,11 @@ And finally, the data has to be rendered somewhere. I added it to my template
 ## Other Info ##
 
 **Version** 0.6 - 2011/02/06
+
 **License** (http://creativecommons.org/licenses/by-sa/3.0/ "CC BY-SA 3.0")
+
 **Author** Jesús Díez
+
 * web (http://jesusdiez.com "Jesus Díez") 
 * email (mailto:jesus@jesusdiez.com "jesus@jesusdiez.com")
 * twitter (http://twitter.com/jesusdiezc "@jesusdiezc") 
